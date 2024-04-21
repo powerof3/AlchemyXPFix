@@ -11,7 +11,7 @@ void OnInit(SKSE::MessagingInterface::Message* a_msg)
 extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 	SKSE::PluginVersionData v;
 	v.PluginVersion(Version::MAJOR);
-	v.PluginName("DualCastingFix");
+	v.PluginName("AlchemyXPFix");
 	v.AuthorName("powerofthree");
 	v.UsesAddressLibrary();
 	v.UsesUpdatedStructs();
@@ -23,7 +23,7 @@ extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Query(const SKSE::QueryInterface* a_skse, SKSE::PluginInfo* a_info)
 {
 	a_info->infoVersion = SKSE::PluginInfo::kVersion;
-	a_info->name = "DualCastingFix";
+	a_info->name = "AlchemyXPFix";
 	a_info->version = Version::MAJOR;
 
 	if (a_skse->IsEditor()) {
